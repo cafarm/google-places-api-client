@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'PlacesClient' target in the 'PlacesClient' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "MACLog.h"
+#endif
