@@ -7,9 +7,10 @@
 //
 
 #import "GPDetailsResponse.h"
+#import "GPDetailsResult.h"
 
 @implementation GPDetailsResponse
 
-@synthesize results;
+@synthesize result;
 
 @end

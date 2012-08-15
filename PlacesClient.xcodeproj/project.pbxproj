@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F06D1C515DB1F2200F91575 /* GPAutocompletePredictionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1C415DB1F2200F91575 /* GPAutocompletePredictionTest.m */; };
+		1F06D1D415DB21D300F91575 /* GPAutocompleteTermTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1D315DB21D300F91575 /* GPAutocompleteTermTest.m */; };
+		1F06D1D715DB24A800F91575 /* GPDetailsResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1D615DB24A800F91575 /* GPDetailsResponseTest.m */; };
+		1F06D1DA15DB2B5300F91575 /* GPDetailsResultTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1D915DB2B5200F91575 /* GPDetailsResultTest.m */; };
+		1F06D1DD15DB2C7D00F91575 /* GPDetailsGeometryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1DC15DB2C7D00F91575 /* GPDetailsGeometryTest.m */; };
+		1F06D1E015DB2E4500F91575 /* GPDetailsLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1DF15DB2E4500F91575 /* GPDetailsLocation.m */; };
+		1F06D1E315DB31DF00F91575 /* GPDetailsLocationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1E215DB31DF00F91575 /* GPDetailsLocationTest.m */; };
+		1F06D1E615DB334D00F91575 /* GPMappingProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1E515DB334D00F91575 /* GPMappingProviderTest.m */; };
+		1F06D1E915DB393C00F91575 /* GPObjectManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1E815DB393C00F91575 /* GPObjectManagerTest.m */; };
 		1F9FABA315DA28400017F023 /* GPMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABA215DA28400017F023 /* GPMappingProvider.m */; };
 		1F9FABA615DA32160017F023 /* GPObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABA515DA32160017F023 /* GPObjectManager.m */; };
 		1F9FABB915DA3D630017F023 /* GPAutocompleteResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABB815DA3D630017F023 /* GPAutocompleteResponseTest.m */; };
@@ -111,6 +120,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F06D1C415DB1F2200F91575 /* GPAutocompletePredictionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPAutocompletePredictionTest.m; path = Models/GPAutocompletePredictionTest.m; sourceTree = "<group>"; };
+		1F06D1D315DB21D300F91575 /* GPAutocompleteTermTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPAutocompleteTermTest.m; path = Models/GPAutocompleteTermTest.m; sourceTree = "<group>"; };
+		1F06D1D615DB24A800F91575 /* GPDetailsResponseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPDetailsResponseTest.m; path = Models/GPDetailsResponseTest.m; sourceTree = "<group>"; };
+		1F06D1D915DB2B5200F91575 /* GPDetailsResultTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPDetailsResultTest.m; path = Models/GPDetailsResultTest.m; sourceTree = "<group>"; };
+		1F06D1DC15DB2C7D00F91575 /* GPDetailsGeometryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPDetailsGeometryTest.m; path = Models/GPDetailsGeometryTest.m; sourceTree = "<group>"; };
+		1F06D1DE15DB2E4500F91575 /* GPDetailsLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPDetailsLocation.h; path = Models/GPDetailsLocation.h; sourceTree = "<group>"; };
+		1F06D1DF15DB2E4500F91575 /* GPDetailsLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPDetailsLocation.m; path = Models/GPDetailsLocation.m; sourceTree = "<group>"; };
+		1F06D1E215DB31DF00F91575 /* GPDetailsLocationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPDetailsLocationTest.m; path = Models/GPDetailsLocationTest.m; sourceTree = "<group>"; };
+		1F06D1E515DB334D00F91575 /* GPMappingProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPMappingProviderTest.m; path = ObjectMapping/GPMappingProviderTest.m; sourceTree = "<group>"; };
+		1F06D1E815DB393C00F91575 /* GPObjectManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPObjectManagerTest.m; path = ObjectMapping/GPObjectManagerTest.m; sourceTree = "<group>"; };
 		1F9FABA115DA28400017F023 /* GPMappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPMappingProvider.h; path = ObjectMapping/GPMappingProvider.h; sourceTree = "<group>"; };
 		1F9FABA215DA28400017F023 /* GPMappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPMappingProvider.m; path = ObjectMapping/GPMappingProvider.m; sourceTree = "<group>"; };
 		1F9FABA415DA32150017F023 /* GPObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPObjectManager.h; path = ObjectMapping/GPObjectManager.h; sourceTree = "<group>"; };
@@ -246,6 +265,8 @@
 				1FCA564E15DA23C50025B8F8 /* GPDetailsResult.m */,
 				1FCA565015DA24750025B8F8 /* GPDetailsGeometry.h */,
 				1FCA565115DA24750025B8F8 /* GPDetailsGeometry.m */,
+				1F06D1DE15DB2E4500F91575 /* GPDetailsLocation.h */,
+				1F06D1DF15DB2E4500F91575 /* GPDetailsLocation.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -253,6 +274,8 @@
 		1FCA563B15DA123C0025B8F8 /* ObjectMapping */ = {
 			isa = PBXGroup;
 			children = (
+				1F06D1E815DB393C00F91575 /* GPObjectManagerTest.m */,
+				1F06D1E515DB334D00F91575 /* GPMappingProviderTest.m */,
 			);
 			name = ObjectMapping;
 			sourceTree = "<group>";
@@ -261,6 +284,12 @@
 			isa = PBXGroup;
 			children = (
 				1F9FABB815DA3D630017F023 /* GPAutocompleteResponseTest.m */,
+				1F06D1C415DB1F2200F91575 /* GPAutocompletePredictionTest.m */,
+				1F06D1D315DB21D300F91575 /* GPAutocompleteTermTest.m */,
+				1F06D1D615DB24A800F91575 /* GPDetailsResponseTest.m */,
+				1F06D1D915DB2B5200F91575 /* GPDetailsResultTest.m */,
+				1F06D1DC15DB2C7D00F91575 /* GPDetailsGeometryTest.m */,
+				1F06D1E215DB31DF00F91575 /* GPDetailsLocationTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -506,6 +535,7 @@
 				1FCA565215DA24750025B8F8 /* GPDetailsGeometry.m in Sources */,
 				1F9FABA315DA28400017F023 /* GPMappingProvider.m in Sources */,
 				1F9FABA615DA32160017F023 /* GPObjectManager.m in Sources */,
+				1F06D1E015DB2E4500F91575 /* GPDetailsLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +545,14 @@
 			files = (
 				1F9FABB915DA3D630017F023 /* GPAutocompleteResponseTest.m in Sources */,
 				1F9FABC315DA40520017F023 /* GPTestEnvironment.m in Sources */,
+				1F06D1C515DB1F2200F91575 /* GPAutocompletePredictionTest.m in Sources */,
+				1F06D1D415DB21D300F91575 /* GPAutocompleteTermTest.m in Sources */,
+				1F06D1D715DB24A800F91575 /* GPDetailsResponseTest.m in Sources */,
+				1F06D1DA15DB2B5300F91575 /* GPDetailsResultTest.m in Sources */,
+				1F06D1DD15DB2C7D00F91575 /* GPDetailsGeometryTest.m in Sources */,
+				1F06D1E315DB31DF00F91575 /* GPDetailsLocationTest.m in Sources */,
+				1F06D1E615DB334D00F91575 /* GPMappingProviderTest.m in Sources */,
+				1F06D1E915DB393C00F91575 /* GPObjectManagerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

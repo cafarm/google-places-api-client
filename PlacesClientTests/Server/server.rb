@@ -18,7 +18,12 @@ def render_fixture(filename)
   send_file File.join(settings.public_folder, filename)
 end
 
-get '/ws/plan' do
+get '/place/autocomplete/json' do
   content_type 'application/json'
-  render_fixture('response.json')
+  render_fixture('autocompleteResponse.json')
+end
+
+get '/place/details/json' do
+  content_type 'application/json'
+  render_fixture('detailsResponse.json')
 end

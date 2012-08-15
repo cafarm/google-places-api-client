@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+@class GPDetailsResult;
+
 @interface GPObjectManager : NSObject
 
 - (id)initWithBaseURL:(NSURL *)baseURL apiKey:(NSString *)apiKey;
@@ -21,7 +23,7 @@
                                       radius:(double)radius
                            completionHandler:(void (^)(NSArray *predictions, NSError *error))completionHandler;
 
-- (void)loadDetailsResultsWithReference:(NSString *)reference
-                      completionHandler:(void (^)(NSArray *results, NSError *error))completionHandler;
+- (void)loadDetailsResultWithReference:(NSString *)reference
+                     completionHandler:(void (^)(GPDetailsResult *result, NSError *error))completionHandler;
 
 @end

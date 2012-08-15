@@ -22,4 +22,6 @@
 
 - (RKObjectMapping *)detailsGeometryObjectMapping;
 
+- (RKObjectMapping *)detailsLocationObjectMapping;
+
 @end

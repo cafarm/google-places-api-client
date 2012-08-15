@@ -63,7 +63,7 @@
                                      @"components", @"country:us",
                                      nil];
     
-    NSString *resourcePath = [@"/place/autocomplete" stringByAppendingQueryParameters:queryParameters];
+    NSString *resourcePath = [@"/place/autocomplete/json" stringByAppendingQueryParameters:queryParameters];
     
     DLog(@"Request URL: %@%@", [[self rkObjectManager].baseURL absoluteString], resourcePath);
 
@@ -92,8 +92,8 @@
     }];
 }
 
-- (void)loadDetailsResultsWithReference:(NSString *)reference
-                      completionHandler:(void (^)(NSArray *, NSError *))completionHandler
+- (void)loadDetailsResultWithReference:(NSString *)reference
+                      completionHandler:(void (^)(GPDetailsResult *, NSError *))completionHandler
 {
     NSDictionary *queryParameters = [NSDictionary dictionaryWithKeysAndObjects:
                                      @"reference", reference,
@@ -101,7 +101,7 @@
                                      @"key", self.apiKey,
                                      nil];
     
-    NSString *resourcePath = [@"/place/details" stringByAppendingQueryParameters:queryParameters];
+    NSString *resourcePath = [@"/place/details/json" stringByAppendingQueryParameters:queryParameters];
     
     DLog(@"Request URL: %@%@", [[self rkObjectManager].baseURL absoluteString], resourcePath);
     
@@ -110,7 +110,7 @@
         loader.onDidLoadObject = ^(id object) {
             GPDetailsResponse *response = (GPDetailsResponse *)object;
             
-            NSArray *results = response.results;
+            GPDetailsResult *result = response.result;
             
             NSError *error = nil;
             if (response.status != GPOk) {
@@ -121,7 +121,7 @@
                                         userInfo:userInfo];
             }
             
-            completionHandler(results, error);
+            completionHandler(result, error);
         };
         
         loader.onDidFailWithError = ^(NSError *error) {

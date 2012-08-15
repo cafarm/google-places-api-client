@@ -8,8 +8,10 @@
 
 #import "GPResponse.h"
 
+@class GPDetailsResult;
+
 @interface GPDetailsResponse : GPResponse
 
-@property (strong, nonatomic) NSArray *results;
+@property (strong, nonatomic) GPDetailsResult *result;
 
 @end

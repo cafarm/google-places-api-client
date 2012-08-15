@@ -13,6 +13,7 @@
 #import "GPDetailsResponse.h"
 #import "GPDetailsResult.h"
 #import "GPDetailsGeometry.h"
+#import "GPDetailsLocation.h"
 
 @implementation GPMappingProvider
 
@@ -20,8 +21,8 @@
 {
     self = [super init];
     if (self) {
-        [self setObjectMapping:[self autocompleteResponseObjectMapping] forKeyPath:@"/place/autocomplete"];
-        [self setObjectMapping:[self detailsResponseObjectMapping] forKeyPath:@"/place/details"];
+        [self setObjectMapping:[self autocompleteResponseObjectMapping] forResourcePathPattern:@"/place/autocomplete/json"];
+        [self setObjectMapping:[self detailsResponseObjectMapping] forResourcePathPattern:@"/place/details/json"];
     }
     return self;
 }
@@ -63,7 +64,7 @@
     
     [mapping mapAttributes:@"status", nil];
     
-    [mapping mapKeyPath:@"results" toRelationship:@"results" withMapping:[self detailsResultObjectMapping]];
+    [mapping mapKeyPath:@"result" toRelationship:@"result" withMapping:[self detailsResultObjectMapping]];
     
     return mapping;
 }
@@ -80,6 +81,16 @@
 - (RKObjectMapping *)detailsGeometryObjectMapping
 {
     RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[GPDetailsGeometry class]];
+    
+    [mapping mapKeyPath:@"location" toRelationship:@"location" withMapping:[self detailsLocationObjectMapping]];
+
+    
+    return mapping;
+}
+
+- (RKObjectMapping *)detailsLocationObjectMapping
+{
+    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[GPDetailsLocation class]];
     
     [mapping mapKeyPathsToAttributes:
      @"lat", @"latitude",

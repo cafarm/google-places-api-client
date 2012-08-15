@@ -7,13 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
+
+@class GPDetailsLocation;
 
 @interface GPDetailsGeometry : NSObject
 
-@property (strong, nonatomic) NSNumber *latitude;
-@property (strong, nonatomic) NSNumber *longitude;
-
-@property (readonly, nonatomic) CLLocationCoordinate2D coordinate;
+@property (strong, nonatomic) GPDetailsLocation *location;
 
 @end

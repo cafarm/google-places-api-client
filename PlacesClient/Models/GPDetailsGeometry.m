@@ -10,12 +10,6 @@
 
 @implementation GPDetailsGeometry
 
-@synthesize latitude;
-@synthesize longitude;
-
-- (CLLocationCoordinate2D)coordinate
-{
-    return CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
-}
+@synthesize location;
 
 @end
