@@ -16,6 +16,15 @@
 		1F06D1E315DB31DF00F91575 /* GPDetailsLocationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1E215DB31DF00F91575 /* GPDetailsLocationTest.m */; };
 		1F06D1E615DB334D00F91575 /* GPMappingProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1E515DB334D00F91575 /* GPMappingProviderTest.m */; };
 		1F06D1E915DB393C00F91575 /* GPObjectManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06D1E815DB393C00F91575 /* GPObjectManagerTest.m */; };
+		1F06D23315DB4C6500F91575 /* GPObjectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9FABA415DA32150017F023 /* GPObjectManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F06D23415DB4C6500F91575 /* GPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA564A15DA213C0025B8F8 /* GPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F06D23515DB4C6500F91575 /* GPAutocompleteResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA563E15DA153C0025B8F8 /* GPAutocompleteResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F06D23615DB4C6500F91575 /* GPAutocompletePrediction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA564115DA16430025B8F8 /* GPAutocompletePrediction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F06D23715DB4C6500F91575 /* GPAutocompleteTerm.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA564415DA19470025B8F8 /* GPAutocompleteTerm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F06D23815DB4C6500F91575 /* GPDetailsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA564715DA20AE0025B8F8 /* GPDetailsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F06D23915DB4C6500F91575 /* GPDetailsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA564D15DA23C50025B8F8 /* GPDetailsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F06D23A15DB4C6500F91575 /* GPDetailsGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA565015DA24750025B8F8 /* GPDetailsGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F06D23B15DB4C6500F91575 /* GPDetailsLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F06D1DE15DB2E4500F91575 /* GPDetailsLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F9FABA315DA28400017F023 /* GPMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABA215DA28400017F023 /* GPMappingProvider.m */; };
 		1F9FABA615DA32160017F023 /* GPObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABA515DA32160017F023 /* GPObjectManager.m */; };
 		1F9FABB915DA3D630017F023 /* GPAutocompleteResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABB815DA3D630017F023 /* GPAutocompleteResponseTest.m */; };
@@ -106,18 +115,6 @@
 			remoteInfo = PlacesClient;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1FFC610915DA0D8700830612 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F06D1C415DB1F2200F91575 /* GPAutocompletePredictionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPAutocompletePredictionTest.m; path = Models/GPAutocompletePredictionTest.m; sourceTree = "<group>"; };
@@ -384,6 +381,25 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1F06D23215DB4C3400F91575 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F06D23315DB4C6500F91575 /* GPObjectManager.h in Headers */,
+				1F06D23415DB4C6500F91575 /* GPResponse.h in Headers */,
+				1F06D23515DB4C6500F91575 /* GPAutocompleteResponse.h in Headers */,
+				1F06D23615DB4C6500F91575 /* GPAutocompletePrediction.h in Headers */,
+				1F06D23715DB4C6500F91575 /* GPAutocompleteTerm.h in Headers */,
+				1F06D23815DB4C6500F91575 /* GPDetailsResponse.h in Headers */,
+				1F06D23915DB4C6500F91575 /* GPDetailsResult.h in Headers */,
+				1F06D23A15DB4C6500F91575 /* GPDetailsGeometry.h in Headers */,
+				1F06D23B15DB4C6500F91575 /* GPDetailsLocation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1FFC610A15DA0D8700830612 /* PlacesClient */ = {
 			isa = PBXNativeTarget;
@@ -391,7 +407,7 @@
 			buildPhases = (
 				1FFC610715DA0D8700830612 /* Sources */,
 				1FFC610815DA0D8700830612 /* Frameworks */,
-				1FFC610915DA0D8700830612 /* CopyFiles */,
+				1F06D23215DB4C3400F91575 /* Headers */,
 			);
 			buildRules = (
 			);
