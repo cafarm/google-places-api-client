@@ -9,17 +9,17 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    GPOk,
-    GPUnknownError,
-    GPZeroResults,
-    GPOverQueryLimit,
-    GPRequestDenied,
-    GPInvalidRequest,
-    GPNotFound
-} GPStatus;
+    GPResponseStatusOk,
+    GPResponseStatusUnknownError,
+    GPResponseStatusZeroResults,
+    GPResponseStatusOverQueryLimit,
+    GPResponseStatusRequestDenied,
+    GPResponseStatusInvalidRequest,
+    GPResponseStatusNotFound
+} GPResponseStatus;
 
 @interface GPResponse : NSObject
 
-@property (nonatomic) GPStatus status;
+@property (nonatomic) GPResponseStatus status;
 
 @end

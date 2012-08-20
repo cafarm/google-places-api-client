@@ -75,7 +75,7 @@
             NSArray *predictions = response.predictions;
             
             NSError *error = nil;
-            if (response.status != GPOk) {
+            if (response.status != GPResponseStatusOk) {
                 NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
                 [userInfo setValue:[NSNumber numberWithInt:response.status] forKey:NSLocalizedDescriptionKey];
                 error = [NSError errorWithDomain:@"com.sevenoeight.PlacesClient"
@@ -113,7 +113,7 @@
             GPDetailsResult *result = response.result;
             
             NSError *error = nil;
-            if (response.status != GPOk) {
+            if (response.status != GPResponseStatusOk) {
                 NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
                 [userInfo setValue:[NSNumber numberWithInt:response.status] forKey:NSLocalizedDescriptionKey];
                 error = [NSError errorWithDomain:@"com.sevenoeight.PlacesClient"

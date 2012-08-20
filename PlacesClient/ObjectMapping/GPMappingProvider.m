@@ -73,7 +73,7 @@
 {
     RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[GPDetailsResult class]];
     
-    [mapping mapAttributes:@"name", nil];
+    [mapping mapAttributes:@"name", @"types", @"vicinity", nil];
     
     [mapping mapKeyPath:@"geometry" toRelationship:@"geometry" withMapping:[self detailsGeometryObjectMapping]];
     

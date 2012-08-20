@@ -10,9 +10,15 @@
 
 @class GPDetailsGeometry;
 
+typedef enum {
+    GPDetailsResultTypeEstablishment
+} GPDetailsResultType;
+
 @interface GPDetailsResult : NSObject
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) GPDetailsGeometry *geometry;
+@property (strong, nonatomic) NSArray *types;
+@property (strong, nonatomic) NSString *vicinity;
 
 @end

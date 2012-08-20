@@ -12,6 +12,7 @@
 
 #import "GPMappingProvider.h"
 #import "GPDetailsGeometry.h"
+#import "GPDetailsResult.h"
 
 @interface GPDetailsResultTest : SenTestCase
 @end
@@ -58,6 +59,22 @@
     [mappingTest expectMappingFromKeyPath:@"geometry" toKeyPath:@"geometry" passingTest:^BOOL(RKObjectAttributeMapping *mapping, id value) {
         return [value isKindOfClass:[GPDetailsGeometry class]] && value != nil;
     }];
+    STAssertNoThrow([mappingTest verify], nil);
+}
+
+- (void)testMappingOfTypes
+{
+    RKMappingTest *mappingTest = [self mappingTest];
+    [mappingTest expectMappingFromKeyPath:@"types" toKeyPath:@"types" passingTest:^BOOL(RKObjectAttributeMapping *mapping, id value) {
+        return [value isKindOfClass:[NSArray class]] && [((NSArray *)value) containsObject:[NSNumber numberWithInt:GPDetailsResultTypeEstablishment]];
+    }];
+    STAssertNoThrow([mappingTest verify], nil);
+}
+
+- (void)testMappingOfVicinity
+{
+    RKMappingTest *mappingTest = [self mappingTest];
+    [mappingTest expectMappingFromKeyPath:@"vicinity" toKeyPath:@"vicinity" withValue:@"1501 4th Avenue #114, Seattle"];
     STAssertNoThrow([mappingTest verify], nil);
 }
 

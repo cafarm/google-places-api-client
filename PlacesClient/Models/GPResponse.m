@@ -18,15 +18,15 @@
     NSString *stringValue = (NSString *)*ioValue;
     
     if ([stringValue isEqualToString:@"OK"]) {
-        *ioValue = [NSNumber numberWithInt:GPOk];
+        *ioValue = [NSNumber numberWithInt:GPResponseStatusOk];
     } else if ([stringValue isEqualToString:@"ZERO_RESULTS"]) {
-        *ioValue = [NSNumber numberWithInt:GPZeroResults];
+        *ioValue = [NSNumber numberWithInt:GPResponseStatusZeroResults];
     } else if ([stringValue isEqualToString:@"OVER_QUERY_LIMIT"]) {
-        *ioValue = [NSNumber numberWithInt:GPOverQueryLimit];
+        *ioValue = [NSNumber numberWithInt:GPResponseStatusOverQueryLimit];
     } else if ([stringValue isEqualToString:@"REQUEST_DENIED"]) {
-        *ioValue = [NSNumber numberWithInt:GPRequestDenied];
+        *ioValue = [NSNumber numberWithInt:GPResponseStatusRequestDenied];
     } else if ([stringValue isEqualToString:@"INVALID_REQUEST"]) {
-        *ioValue = [NSNumber numberWithInt:GPInvalidRequest];
+        *ioValue = [NSNumber numberWithInt:GPResponseStatusInvalidRequest];
     } else {
         return NO;
     }

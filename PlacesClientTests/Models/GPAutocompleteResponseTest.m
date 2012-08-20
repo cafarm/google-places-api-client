@@ -50,7 +50,7 @@
     GPAutocompleteResponse *response = [[GPAutocompleteResponse alloc] init];
     RKMappingTest *mappingTest = [RKMappingTest testForMapping:[self mapping] sourceObject:[self data] destinationObject:response];
     [mappingTest performMapping];
-    STAssertTrue(response.status == GPOk, nil);
+    STAssertTrue(response.status == GPResponseStatusOk, nil);
 }
 
 - (void)testMappingOfPredictions
