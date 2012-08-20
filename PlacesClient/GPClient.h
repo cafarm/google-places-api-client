@@ -12,6 +12,6 @@
 #import "GPAutocompletePrediction.h"
 #import "GPAutocompleteTerm.h"
 #import "GPDetailsResponse.h"
-#import "GPDetailsResults.h"
+#import "GPDetailsResult.h"
 #import "GPDetailsGeometry.h"
 #import "GPDetailsLocation.h"
