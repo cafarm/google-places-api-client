@@ -25,7 +25,7 @@
 		1F06D23915DB4C6500F91575 /* GPDetailsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA564D15DA23C50025B8F8 /* GPDetailsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F06D23A15DB4C6500F91575 /* GPDetailsGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA565015DA24750025B8F8 /* GPDetailsGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F06D23B15DB4C6500F91575 /* GPDetailsLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F06D1DE15DB2E4500F91575 /* GPDetailsLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F39062815E1CA3D00D05A59 /* GPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F39062715E1CA3D00D05A59 /* GPClient.h */; };
+		1F39062815E1CA3D00D05A59 /* GPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F39062715E1CA3D00D05A59 /* GPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F9FABA315DA28400017F023 /* GPMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABA215DA28400017F023 /* GPMappingProvider.m */; };
 		1F9FABA615DA32160017F023 /* GPObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABA515DA32160017F023 /* GPObjectManager.m */; };
 		1F9FABB915DA3D630017F023 /* GPAutocompleteResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABB815DA3D630017F023 /* GPAutocompleteResponseTest.m */; };
