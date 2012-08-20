@@ -12,6 +12,7 @@
 
 @interface GPDetailsResult : NSObject
 
+@property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) GPDetailsGeometry *geometry;
 
 @end

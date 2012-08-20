@@ -72,7 +72,9 @@
 - (RKObjectMapping *)detailsResultObjectMapping
 {
     RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[GPDetailsResult class]];
-        
+    
+    [mapping mapAttributes:@"name", nil];
+    
     [mapping mapKeyPath:@"geometry" toRelationship:@"geometry" withMapping:[self detailsGeometryObjectMapping]];
     
     return mapping;

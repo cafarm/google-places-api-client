@@ -45,6 +45,13 @@
     return [RKMappingTest testForMapping:[self mapping] object:[self data]];
 }
 
+- (void)testMappingOfName
+{
+    RKMappingTest *mappingTest = [self mappingTest];
+    [mappingTest expectMappingFromKeyPath:@"name" toKeyPath:@"name" withValue:@"Chipotle Mexican Grill"];
+    STAssertNoThrow([mappingTest verify], nil);
+}
+
 - (void)testMappingOfGeometry
 {
     RKMappingTest *mappingTest = [self mappingTest];
