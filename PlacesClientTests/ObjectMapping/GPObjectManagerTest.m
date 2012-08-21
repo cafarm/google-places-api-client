@@ -56,40 +56,40 @@
 {
     GPObjectManager *objectManager = [self objectManager];
     
-    __block NSArray *loadedPredictions;
-    __block NSError *loadedError;
+    __block NSArray *fetchedPredictions;
+    __block NSError *fetchError;
     [objectManager fetchAutocompletePredictionsWithInput:@"Chipot"
                                                location:CLLocationCoordinate2DMake(47.659746, -122.314012)
                                                  radius:16000
                                       completionHandler:^(NSArray *predictions, NSError *error)
     {
-        loadedPredictions = predictions;
-        loadedError = error;
+        fetchedPredictions = predictions;
+        fetchError = error;
         done = YES;
     }];
     
     STAssertTrue([self waitForCompletion:90.0], @"Failed to get any results in time");
-    STAssertNil(loadedError, nil);
-    STAssertNotNil(loadedPredictions, nil);
+    STAssertNil(fetchError, nil);
+    STAssertNotNil(fetchedPredictions, nil);
 }
 
 - (void)testLoadingOfDetailsResult
 {
     GPObjectManager *objectManager = [self objectManager];
     
-    __block GPDetailsResult *loadedResult;
-    __block NSError *loadedError;
+    __block GPDetailsResult *fetchedResult;
+    __block NSError *fetchError;
     [objectManager fetchDetailsResultWithReference:@"CoQBdwAAAEdboelq1A0WAnx5owe7C-AXqyTZYmIxWsJU5LvBBnffgiqOUOVrwKBxdAUFrI0K9WdEvi1xzijctqwA-a_UUZxUCPjcGXgTzfQQ1wkMliQ40ntEMAnJ08Zg-QBCPM9HxauBGm86vs4e8aSR5BAV9NQNJtUtKgLjDDpl2lp0BAJdEhDMTtwMkLf_G3f_g4v0W6DqGhRUaQ5BbOT5idq8JyARYzkq_zwK0g"
                                 completionHandler:^(GPDetailsResult *result, NSError *error)
      {
-         loadedResult = result;
-         loadedError = error;
+         fetchedResult = result;
+         fetchError = error;
          done = YES;
      }];
     
     STAssertTrue([self waitForCompletion:90.0], @"Failed to get any results in time");
-    STAssertNil(loadedError, nil);
-    STAssertNotNil(loadedResult, nil);
+    STAssertNil(fetchError, nil);
+    STAssertNotNil(fetchedResult, nil);
 }
 
 @end
