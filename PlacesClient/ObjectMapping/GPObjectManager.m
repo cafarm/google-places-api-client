@@ -49,10 +49,10 @@
     return _rkObjectManager;
 }
 
-- (void)loadAutocompletePredictionsWithInput:(NSString *)input
-                                    location:(CLLocationCoordinate2D)location
-                                      radius:(double)radius
-                           completionHandler:(void (^)(NSArray *predictions, NSError *error))completionHandler
+- (void)fetchAutocompletePredictionsWithInput:(NSString *)input
+                                     location:(CLLocationCoordinate2D)location
+                                       radius:(double)radius
+                            completionHandler:(void (^)(NSArray *predictions, NSError *error))completionHandler
 {
     NSDictionary *queryParameters = [NSDictionary dictionaryWithKeysAndObjects:
                                      @"input", input,
@@ -92,7 +92,7 @@
     }];
 }
 
-- (void)loadDetailsResultWithReference:(NSString *)reference
+- (void)fetchDetailsResultWithReference:(NSString *)reference
                       completionHandler:(void (^)(GPDetailsResult *, NSError *))completionHandler
 {
     NSDictionary *queryParameters = [NSDictionary dictionaryWithKeysAndObjects:

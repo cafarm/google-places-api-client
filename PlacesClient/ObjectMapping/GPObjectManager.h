@@ -18,12 +18,12 @@
 @property (readonly, nonatomic) NSURL *baseURL;
 @property (readonly, nonatomic) NSString* apiKey;
 
-- (void)loadAutocompletePredictionsWithInput:(NSString *)input
-                                    location:(CLLocationCoordinate2D)location
-                                      radius:(double)radius
-                           completionHandler:(void (^)(NSArray *predictions, NSError *error))completionHandler;
+- (void)fetchAutocompletePredictionsWithInput:(NSString *)input
+                                     location:(CLLocationCoordinate2D)location
+                                       radius:(double)radius
+                            completionHandler:(void (^)(NSArray *predictions, NSError *error))completionHandler;
 
-- (void)loadDetailsResultWithReference:(NSString *)reference
-                     completionHandler:(void (^)(GPDetailsResult *result, NSError *error))completionHandler;
+- (void)fetchDetailsResultWithReference:(NSString *)reference
+                      completionHandler:(void (^)(GPDetailsResult *result, NSError *error))completionHandler;
 
 @end

@@ -58,7 +58,7 @@
     
     __block NSArray *loadedPredictions;
     __block NSError *loadedError;
-    [objectManager loadAutocompletePredictionsWithInput:@"Chipot"
+    [objectManager fetchAutocompletePredictionsWithInput:@"Chipot"
                                                location:CLLocationCoordinate2DMake(47.659746, -122.314012)
                                                  radius:16000
                                       completionHandler:^(NSArray *predictions, NSError *error)
@@ -79,7 +79,7 @@
     
     __block GPDetailsResult *loadedResult;
     __block NSError *loadedError;
-    [objectManager loadDetailsResultWithReference:@"CoQBdwAAAEdboelq1A0WAnx5owe7C-AXqyTZYmIxWsJU5LvBBnffgiqOUOVrwKBxdAUFrI0K9WdEvi1xzijctqwA-a_UUZxUCPjcGXgTzfQQ1wkMliQ40ntEMAnJ08Zg-QBCPM9HxauBGm86vs4e8aSR5BAV9NQNJtUtKgLjDDpl2lp0BAJdEhDMTtwMkLf_G3f_g4v0W6DqGhRUaQ5BbOT5idq8JyARYzkq_zwK0g"
+    [objectManager fetchDetailsResultWithReference:@"CoQBdwAAAEdboelq1A0WAnx5owe7C-AXqyTZYmIxWsJU5LvBBnffgiqOUOVrwKBxdAUFrI0K9WdEvi1xzijctqwA-a_UUZxUCPjcGXgTzfQQ1wkMliQ40ntEMAnJ08Zg-QBCPM9HxauBGm86vs4e8aSR5BAV9NQNJtUtKgLjDDpl2lp0BAJdEhDMTtwMkLf_G3f_g4v0W6DqGhRUaQ5BbOT5idq8JyARYzkq_zwK0g"
                                 completionHandler:^(GPDetailsResult *result, NSError *error)
      {
          loadedResult = result;
